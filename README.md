@@ -1,4 +1,5 @@
-_Simple environment to test libserialport in a single build machine fashion_
+_Simple environment to test libserialport in a single build machine fashion with tty0tty support_
+
 
 Prerequisites:
 * An [osxcross](https://github.com/tpoechtrager/osxcross) installation
@@ -9,7 +10,7 @@ TLTR:
 dpkg --add-architecture i386
 apt-get install build-essential gcc-multilib g++-multilib mingw-w64 xz-utils libxml2-dev clang patch git gcc-4.8-arm-linux-gnueabihf g++-4.8-arm-linux-gnueabihf autoconf libtool linux-libc-dev:i386 gcc-arm-linux-gnueabihf zip
 #setup osxcross + add binaries to PATH
-git clone https://github.com/facchinm/listSerialPortsC --recursive
+git clone https://github.com/lcgamboa/listSerialPortsC --recursive
 ./pack_and_release.sh
 ```
 
